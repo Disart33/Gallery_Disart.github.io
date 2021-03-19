@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* margin — внешний отступ
+    padding — внутренний отступ
+    box-sizing — box-модель элемента
+    */
+}
+
+body {
+    background-color: #efefef;
+    font-family: Roboto;
+}
+
+main {
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    /* inline — значение по умолчанию, строчное отображение, элемент не переносится на следующую строчку;
+    block — блочное отображение, элемент переносится на следующую строчку;
+    flex — отображение для контейнера, так называемая гибкая сетка.
+    */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo {
+    /* Делаем "диви" видимыми
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    background-color: orange; */
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease;
+    width: calc(50% - 40px);
+    height: calc((35vw - 40px) / 16 * 9);
+    margin: 20px;
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+.photo1 {
+    background-image: url(../img/1.jpeg);
+}
+
+.photo2 {
+    background-image: url(../img/2.jpeg);
+}
+
+.photo3 {
+    background-image: url(../img/3.jpeg);
+}
+
+.photo4 {
+    background-image: url(../img/4.jpeg);
+}
+
+.photo5 {
+    background-image: url(../img/5.jpeg);
+}
+
+.photo6 {
+    background-image: url(../img/6.jpeg);
+}
+
+.photo7 {
+    background-image: url(../img/7.jpeg);
+}
+
+.photo8 {
+    background-image: url(../img/8.jpeg);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/roboto-regular.tff);
+}
+
+body {
+    background-color: #efefef;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.photo:hover {
+    transform: rotate(3deg) scale(1.07);
+}
